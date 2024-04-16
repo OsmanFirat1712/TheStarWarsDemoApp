@@ -26,6 +26,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.starwarsdemoapp.R
@@ -156,6 +157,27 @@ fun CharacterListItem(
 }
 
 
+@Preview
+@Composable
+fun CharacterListPreview(
+) {
+    val mockCharacter = Character("Luke Skywalker","180")
+    CharacterListItem(character = mockCharacter) {
+    }
+}
+@Preview
+@Composable
+fun CharacterListItemPreview(
+) {
+    val mockData = listOf(
+        Character("Luke Skywalker","180"),
+        Character("Lea Skywalker","160"),
+        Character("Darth Vader","190"),
+
+        )
+    CharacterList(items = mockData) {
+    }
+}
 
 object IndexState{
     val index = mutableStateOf(false)

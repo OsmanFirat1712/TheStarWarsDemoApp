@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StarWarsDemoApp</string>
+    <string name="label_retry">Erneut Versuchen</string>
+    <string name="error_feed">Leider ist etwas schiefgelaufen\n</string>
+    <string name="empty_feed">Keine Ergebnisse</string>
+    <string name="title_overview_screen">Die Star Wars Charaktere</string>
+
+</resources>
